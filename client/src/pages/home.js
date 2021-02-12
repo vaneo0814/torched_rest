@@ -16,7 +16,7 @@ function Home() {
 
   const renderContent = () => (
     <>
-      <div className="Parallax__content__heading">
+      <div className="backgroundContainer">
         <h1 className="Parallax__content__heading__text">Closure</h1>
         <h2 className="Parallax__content__heading__caption">
           Your one-stop source of Web Development tricks

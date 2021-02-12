@@ -1,5 +1,12 @@
 /* home page */
 .homeContainer {
+    background-image: url("https://media4.giphy.com/media/nqtA5obHo3CSelfeKS/source.gif");
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundContainer {
     background-image: url("https://www.comunicaffe.com/wp-content/uploads/2019/07/200-Degrees.jpg");
     height: 1000px;
     background-repeat: no-repeat;
