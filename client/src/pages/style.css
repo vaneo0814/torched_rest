@@ -112,3 +112,20 @@ header {
     font-weight: bolder;
     padding-left: 20px;
 }
+
+/* chefs page */
+
+.chefsHeader {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.btnModal {
+    margin-top: 200px;
+}
+
+.modal-content{
+    height: 300px;
+    margin-top: 300px;
+}
