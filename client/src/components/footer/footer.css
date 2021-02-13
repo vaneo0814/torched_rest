@@ -3,6 +3,8 @@
 .footer {
     background-color: rgb(196, 162, 100);
     font-family: 'Playfair Display', serif;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-copyright {

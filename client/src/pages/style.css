@@ -44,20 +44,71 @@ p {
 }
 
 .menuBtn {
-    background: red;
     left: 50%;
     top: 50%;
     position: absolute;
-    padding: 20px;
+    padding: 24px;
+    border-radius: 10px;
     transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 70px;
+
 }
 
-h1 {
+.space {
     visibility: hidden;
 }
 
 .lastContainer {
-    background-color: red;
+    background-color: rgba(150, 130, 130, 0.521);
     height: 550px;
-    
+}
+
+/* about page  */
+.genBackground {
+    background-image: url("https://i.pinimg.com/originals/c6/cb/c4/c6cbc4998f841c0d89cbb895501f8bd7.jpg");
+    height: 1500px;
+    background-size: cover;
+}
+
+.leftAbout {
+    margin-top: 220px;
+    margin-left: 380px;
+}
+
+.rightAbout {
+    margin-top: 223px;
+    margin-right: 280px;
+}
+
+.aboutHeader {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin-top: 105px;
+    text-transform: uppercase;
+}       
+.aboutInfo {
+    font-family: 'Playfair Display', serif;
+   font-weight: bold;
+   text-align: center;
+}
+
+/* career page */
+header {
+    display: block;
+    padding-top: 200px;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.careersHR {
+    background-color: rgb(0, 0, 0);
+}
+
+.careersInfo{
+    text-align: center;
+    font-weight: bolder;
+    padding-left: 20px;
 }
