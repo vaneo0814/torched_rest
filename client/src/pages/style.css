@@ -1,14 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 /* home page */
-.homeContainer {
+.frontContainer {
     background-image: url("https://media4.giphy.com/media/nqtA5obHo3CSelfeKS/source.gif");
-    height: 1000px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.backgroundContainer {
+.homeContainer {
     background-image: url("https://www.comunicaffe.com/wp-content/uploads/2019/07/200-Degrees.jpg");
-    height: 1000px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.middleContainer {
+    background-color: rgba(194, 128, 66, 0.749);
+    height: 700px;
+    padding-top: 50px;
+    padding-right: 40px;
+}
+
+.leftCol {
+    background: rgb(223, 191, 148);
+    display: block;
+    margin-left: 45px;
+}
+
+.leftHeader {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.menuBtn {
+    background: red;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    visibility: hidden;
+}
+
+.lastContainer {
+    background-color: red;
+    height: 550px;
+    
 }
