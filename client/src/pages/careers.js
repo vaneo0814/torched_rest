@@ -5,7 +5,7 @@ function Careers(){
     return(
         <div className="genBackground">
             <header className="animate__animated animate__backInUp">
-                Contact Us
+                Join our team
             </header>
             <hr className="careersHR"/>
             <p className="careersInfo">
