@@ -15,4 +15,31 @@
     font-size: 20px;
 }
 
+.nav {
+    background-color: rgba(224, 194, 139, 0.81);
+}
 
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  .Nav {
+    /* margin-left: -40px; */
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
+  /* img ~ img  {
+    position: fixed;
+    right: 10px;
+    top:8px;
+  } */
+  /* .Nav__logo{
+    margin-top: 12px;
+  } */
+  .Nav__black{
+    z-index: 2;
+    width: 100%;
+    opacity: 0.8;
+  }

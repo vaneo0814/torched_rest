@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 .footer {
-    background-color: rgb(139, 167, 151);
+    background-color: rgb(196, 162, 100);
     font-family: 'Playfair Display', serif;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-copyright {

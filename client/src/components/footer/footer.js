@@ -9,7 +9,7 @@ import "./footer.css";
 
 function Footer() {
     return (
-        <MDBFooter className="pt-4 mt-4 footer">
+        <MDBFooter className="pt-4 footer">
         <MDBContainer fluid className="text-center text-md-center">
           <MDBRow>
             <MDBCol md="6" className="socialMedia">
