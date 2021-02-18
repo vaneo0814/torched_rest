@@ -28,6 +28,14 @@ const menuSeed = [
         title: "Juice",
         price: "$3.00",
         body: "Guava, Passsion fruit, OJ, Pineapple, Lemonade"
+    },
+    {
+        title: "BLT",
+        price: "$9.00",
+        body: "Bacon, lettuce and tomato, served on sourdough with aoli and spicy mustard"
+    },
+    {
+        
     }
 ];
 

@@ -1,7 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 /* home page */
-.homeContainer {
-    background-image: url("https://www.comunicaffe.com/wp-content/uploads/2019/07/200-Degrees.jpg");
-    height: 1000px;
+.frontContainer {
+    background-image: url("https://media4.giphy.com/media/nqtA5obHo3CSelfeKS/source.gif");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.homeContainer {
+    background-image: url("https://www.comunicaffe.com/wp-content/uploads/2019/07/200-Degrees.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middleContainer {
+    background-color: rgba(194, 128, 66, 0.749);
+    height: 700px;
+    padding-top: 50px;
+    padding-right: 40px;
+}
+
+.leftCol {
+    background: rgb(223, 191, 148);
+    display: block;
+    margin-left: 45px;
+}
+
+.leftHeader {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.menuBtn {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    padding: 24px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 70px;
+
+}
+
+.space {
+    visibility: hidden;
+}
+
+.lastContainer {
+    background-color: rgba(150, 130, 130, 0.521);
+    height: 550px;
+}
+
+/* about page  */
+.genBackground {
+    background-image: url("https://i.pinimg.com/originals/5f/17/f5/5f17f516057244f1576eb107a9222a46.jpg");
+    height: 1500px;
+    background-size: cover;
+}
+
+.leftAbout {
+    margin-top: 220px;
+    margin-left: 380px;
+}
+
+.rightAbout {
+    margin-top: 223px;
+    margin-right: 280px;
+}
+
+.aboutHeader {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin-top: 105px;
+    text-transform: uppercase;
+}       
+.aboutInfo {
+    font-family: 'Playfair Display', serif;
+   font-weight: bold;
+   text-align: center;
+}
+
+/* career page */
+header {
+    display: block;
+    padding-top: 200px;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.careersHR {
+    background-color: rgb(0, 0, 0);
+}
+
+.careersInfo{
+    text-align: center;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+/* chefs page */
+
+.chefsBackground {
+    background-image: url("https://i.pinimg.com/originals/cb/8b/ce/cb8bce86a9335c4b7ea5aa1b36b555de.jpg");
+    background-size: cover;
+}
+
+.chefsHeader {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.chefsInfo {
+    text-align: center;
+    padding-left: 500px;
+    padding-right: 500px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.content {
+    position: relative;
+    top: 200px;
+    z-index: 2;
+    background-color: red;
+    padding: 10px;
+}
+
+.modalStyles {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    z-index: 1000;
+}
+
+.overlayStyle {
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgb(138, 132, 132);
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+.chefsContainer {
+    margin-top: 40px;
+    padding-right: 300px;
+    padding-left: 250px;
+}
+
+img {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.buttonWrapper{
+    background-color: rgba(48, 7, 2, 0);
+    padding: 20px;
+    border-style: none;
+    border-radius: 50%;
+    box-shadow: 5px 10px 18px rgb(63, 60, 60);
+}
+
+
+.buttonWrapper:hover{
+    padding: 40px;
+    background-color: white;
+}
+
+.chefsName_underImg {
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-decoration: underline overline;
+}
+
+.chefsName {
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 65px;
+    margin-bottom: 40px;
+    margin-left: 35px;
+}
+
+.chefsBio {
+    font-weight: bold;
+}
+
+.closeBtn {
+    position: relative;
+    bottom: 100px;
+    right: 500px;
+    font-size: 80px;
+    background-color: rgba(138, 132, 132, 0.338);
+    color: white;
+    border-style: none;
+    margin-left: 50px;
+}
+
+.closeBtn:hover{
+    color: rgb(77, 7, 7);
+}
+
+.lastName {
+    margin-bottom: 100px;
+}
+
+.chefsIg {
+    display: flex;
+    justify-content: space-around;
 }
