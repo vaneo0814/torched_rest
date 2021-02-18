@@ -90,7 +90,7 @@ class Chefs extends Component {
                 <div className="row chefsContainer">
                     <div className="col">
                         <button className="buttonWrapper" onClick={this.openThirdModal}>
-                            <img className="chefsImg" src="https://sites.tufts.edu/chat/files/2019/10/empty-face-107311-3957938.jpg" alt="photoholder">
+                            <img className="chefsImg" src="https://i.postimg.cc/Y0Ttxg9f/Screen-Shot-2021-02-18-at-2-35-41-PM.png" alt="headshot">
                             </img>
                         </button>
                         <h1 className="chefsName_underImg">

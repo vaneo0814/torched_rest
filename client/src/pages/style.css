@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 /* home page */
 .frontContainer {
     background-image: url("https://media4.giphy.com/media/nqtA5obHo3CSelfeKS/source.gif");
@@ -67,7 +67,7 @@ p {
 
 /* about page  */
 .genBackground {
-    background-image: url("https://i.pinimg.com/originals/5f/17/f5/5f17f516057244f1576eb107a9222a46.jpg");
+    background-image: url("https://i.pinimg.com/originals/cb/8b/ce/cb8bce86a9335c4b7ea5aa1b36b555de.jpg");
     height: 1500px;
     background-size: cover;
 }
@@ -171,7 +171,7 @@ header {
     padding-left: 250px;
 }
 
-img {
+.chefsImg {
     border-radius: 50%;
     width: 300px;
 }
@@ -232,4 +232,102 @@ img {
 .chefsIg {
     display: flex;
     justify-content: space-around;
+}
+
+
+/* private events page */
+.eventsContainer{
+    background-image: url("https://64.media.tumblr.com/8805a0cd2182ecd43921c19ba5a08abb/tumblr_o83ulkYDwa1rd19bto1_500.gifv");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.eventsHeader {
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.newWaytoDine {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    font-weight:bolder;
+    text-transform: uppercase;
+}
+
+.dineInfo{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.eventsContent {
+    background-image: url("https://i.pinimg.com/originals/39/48/95/394895c3347439f04907753200533042.jpg");
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.bookBtn {
+    margin-top: 20px;
+    background-color: rgba(212, 216, 190, 0);
+    font-size: 20px;
+    padding: 20px;
+    width: 300px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: black;
+}
+
+.bookBtn:hover{
+    background-color: rgba(13, 31, 0, 0.959);
+    color: white;
+}
+
+/* safety page */
+.covidImg {
+    margin-top: 200px;
+}
+
+.safetyHeader {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.safetyInfo{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+.checklistContainer{
+    background-color: rgba(52, 0, 0, 0.358);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 45px;
+}
+
+.headerCheckList {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.safetyCheckList {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
 }
