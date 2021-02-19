@@ -33,9 +33,6 @@ const menuSeed = [
         title: "BLT",
         price: "$9.00",
         body: "Bacon, lettuce and tomato, served on sourdough with aoli and spicy mustard"
-    },
-    {
-        
     }
 ];
 
