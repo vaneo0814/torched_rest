@@ -70,7 +70,7 @@ class Chefs extends Component {
                 <div className="row chefsContainer">
                     <div className="col">
                         <button className="buttonWrapper" onClick={this.openModal}>
-                            <img className="chefsImg" src="https://i.postimg.cc/Wbj6C7xR/DSC-0611.jpg" alt="photoholder">
+                            <img className="chefsImg" src="https://i.postimg.cc/Wbj6C7xR/DSC-0611.jpg" alt="headshot">
                             </img>
                         </button>
                         <h1 className="chefsName_underImg">
@@ -79,7 +79,7 @@ class Chefs extends Component {
                     </div>
                     <div className="col">
                         <button className="buttonWrapper" onClick={this.openSecondModal}>
-                            <img className="chefsImg" src="https://sites.tufts.edu/chat/files/2019/10/empty-face-107311-3957938.jpg" alt="photoholder">
+                            <img className="chefsImg" src="https://i.postimg.cc/jSnXx31d/omgchristian.png" alt="headshot">
                             </img>
                         </button>
                         <h1 className="chefsName_underImg">
@@ -90,7 +90,7 @@ class Chefs extends Component {
                 <div className="row chefsContainer">
                     <div className="col">
                         <button className="buttonWrapper" onClick={this.openThirdModal}>
-                            <img className="chefsImg" src="https://sites.tufts.edu/chat/files/2019/10/empty-face-107311-3957938.jpg" alt="photoholder">
+                            <img className="chefsImg" src="https://i.postimg.cc/Y0Ttxg9f/Screen-Shot-2021-02-18-at-2-35-41-PM.png" alt="headshot">
                             </img>
                         </button>
                         <h1 className="chefsName_underImg">
@@ -99,7 +99,7 @@ class Chefs extends Component {
                     </div>
                     <div className="col">
                         <button className="buttonWrapper" onClick={this.openFourthModal}>
-                            <img className="chefsImg" src="https://sites.tufts.edu/chat/files/2019/10/empty-face-107311-3957938.jpg" alt="photoholder">
+                            <img className="chefsImg" src="https://i.postimg.cc/zf01Jf6r/Image-from-i-OS.jpg" alt="headshot">
                             </img>
                         </button>
                         <h1 className="chefsName_underImg">
@@ -110,7 +110,7 @@ class Chefs extends Component {
                 <div className="row chefsContainer">
                     <div className="col">
                         <button className="buttonWrapper" onClick={this.openFifthModal}>
-                            <img className="chefsImg" src="https://sites.tufts.edu/chat/files/2019/10/empty-face-107311-3957938.jpg" alt="photoholder">
+                            <img className="chefsImg" src="https://i.postimg.cc/HszG0nW7/resizedaaron.png" alt="headshot">
                             </img>
                         </button>
                         <h1 className="chefsName_underImg lastName">
