@@ -8,7 +8,8 @@ import Contact from "./pages/contactus.js";
 import Chefs from "./pages/chefs.js";
 import Events from "./pages/events.js"
 import Safety from "./pages/safety.js";
-import NoMatch from "./pages/nomatch.js"
+import NoMatch from "./pages/nomatch.js";
+import Login from "./pages/login.js";
 import './App.css';
 
 function App() {
@@ -39,8 +40,8 @@ function App() {
     <Route path="/safety">
       <Safety />
     </Route>
-    <Route>
-      <NoMatch />
+    <Route path="/login">
+      <Login />
     </Route>
   </Switch>
     <Footer/>
