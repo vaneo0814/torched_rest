@@ -6,16 +6,20 @@ import About from "./pages/about.js";
 import Careers from "./pages/careers.js";
 import Contact from "./pages/contactus.js";
 import Chefs from "./pages/chefs.js";
+import Food from "./pages/food";
+//import { StoreProvider } from "./utils/GlobalState";
 import Events from "./pages/events.js"
 import Safety from "./pages/safety.js";
 import NoMatch from "./pages/nomatch.js";
 import Login from "./pages/login.js";
 import './App.css';
+import { StoreProvider } from './utils/GLOBALSTATE';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
+    <StoreProvider>
       <Navigation/>
       {/* Routes  */}
       <Switch>
@@ -42,9 +46,13 @@ function App() {
     </Route>
     <Route path="/login">
       <Login />
+      <Route path="/menu">
+        <Food />
+      </Route>
     </Route>
   </Switch>
     <Footer/>
+    </StoreProvider>
     </div>
     </BrowserRouter>
   );
