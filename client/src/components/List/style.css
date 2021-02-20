@@ -16,12 +16,14 @@
   border-right: none;
 }
 
-.list-overflow-container li * {
-  cursor: pointer;
-}
+/* .list-overflow-container li * {
+  text-decoration: none;
+} */
 
 .list-overflow-container li a {
   color: #2a878c;
+  text-decoration: none;
+  pointer-events: none;
 }
 
 .list-overflow-container li:first-child {

@@ -91,7 +91,7 @@ class Navigation extends React.Component {
             <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="/chefs">Chefs</Nav.Link>
-          <Nav.Link href="/food">Food</Nav.Link>
+          <Nav.Link href="/menu">Menu</Nav.Link>
           <Nav.Link href="/events">Private Events</Nav.Link>
           <Nav.Link href="/safety">Safety</Nav.Link>
           <Nav.Link href="/location">Location</Nav.Link>

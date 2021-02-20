@@ -54,7 +54,7 @@ function App() {
     <Route path="/login"
     component={Login}/>
       {/* <Login /> */}
-      <Route path="/food"
+      <Route path="/menu"
       component={Menu}/>
         {/* <Menu /> */}
       {/* </Route> */}
