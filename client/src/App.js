@@ -6,11 +6,11 @@ import About from "./pages/about.js";
 import Careers from "./pages/careers.js";
 import Contact from "./pages/contactus.js";
 import Chefs from "./pages/chefs.js";
-import Food from "./pages/food";
+import Menu from "./pages/food";
 //import { StoreProvider } from "./utils/GlobalState";
 import Events from "./pages/events.js"
 import Safety from "./pages/safety.js";
-import NoMatch from "./pages/nomatch.js";
+//import NoMatch from "./pages/nomatch.js";
 import Login from "./pages/login.js";
 import './App.css';
 import { StoreProvider } from './utils/GLOBALSTATE';
@@ -23,33 +23,42 @@ function App() {
       <Navigation/>
       {/* Routes  */}
       <Switch>
-    <Route exact path="/">
-      <Home />
-    </Route>
-    <Route path="/about">
-      <About />
-    </Route>
-    <Route path="/careers">
-      <Careers />
-    </Route>
-    <Route path="/contact">
-      <Contact />
-    </Route>
-    <Route path="/chefs">
-      <Chefs />
-    </Route>
-    <Route path="/events">
-      <Events />
-    </Route>
-    <Route path="/safety">
-      <Safety />
-    </Route>
-    <Route path="/login">
-      <Login />
-      <Route path="/menu">
-        <Food />
-      </Route>
-    </Route>
+    <Route exact path="/"
+    component={Home}/>
+      {/* <Home /> */}
+    {/* </Route> */}
+    <Route path="/about"
+    component={About} />
+      {/* <About />
+    </Route> */}
+    <Route path="/careers"
+    component={Careers}/>
+      {/* <Careers />
+    </Route> */}
+    <Route path="/contact"
+    component={Contact}/>
+      {/* <Contact />
+    </Route> */}
+    <Route path="/chefs"
+    component={Chefs}/>
+      {/* <Chefs />
+    </Route> */}
+    <Route path="/events"
+    component={Events}/>
+      {/* <Events />
+    </Route> */}
+    <Route path="/safety"
+    component={Safety}/>
+      {/* <Safety />
+    </Route> */}
+    <Route path="/login"
+    component={Login}/>
+      {/* <Login /> */}
+      <Route path="/food"
+      component={Menu}/>
+        {/* <Menu /> */}
+      {/* </Route> */}
+    {/* </Route> */}
   </Switch>
     <Footer/>
     </StoreProvider>
