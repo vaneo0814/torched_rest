@@ -2,15 +2,26 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 //import { Col, Row, Container } from "../components/Grid";
 import { ListItem, List } from "../components/List";
+import DeleteBtn from "../components/ItemDeleteBtn";
+import CreateMenuItem from "../components/CreateMenuItem";
 //import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GLOBALSTATE";
-import { SET_CURRENT_MENUITEM, LOADING, UPDATE_MENUITEMS } from "../utils/actions";
+import { SET_CURRENT_MENUITEM, LOADING, UPDATE_MENUITEMS, REMOVE_MENUITEM } from "../utils/actions";
 
 //, ADD_FAVORITE, REMOVE_FAVORITE } 
 
 function MenuItemList() {
     const [state, dispatch] = useStoreContext();
+
+    const removeMenuItem = id => {
+        API.deleteMenuItem(id).then(() => {
+            dispatch({
+                type: REMOVE_MENUITEM,
+                _id: id
+            });
+        }).catch(err => console.log(err));
+    };
 
     const getMenuItems = () => {
         dispatch({type: LOADING });
@@ -41,12 +52,16 @@ return (
                         {currentMenuItem.title} - {currentMenuItem.price} : {currentMenuItem.body}
                     </strong> 
                     </Link>
+                    <DeleteBtn onClick={() => removeMenuItem(currentMenuItem._id)}/>
                     </ListItem>
                 ))}
             </List>
         ) : (
             <h3>You haven't added any menu items yet!</h3>
         )}
+
+        
+        <CreateMenuItem/>
     </div>
 
 )
