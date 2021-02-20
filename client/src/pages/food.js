@@ -25,7 +25,10 @@ function MenuItemList() {
     useEffect(() => {
         getMenuItems();
     }, []);
+
 console.log(state);
+console.log("menu items rendered");
+
 return (
     <div>
         <h1>Menu</h1>
