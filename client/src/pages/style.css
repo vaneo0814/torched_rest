@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 /* home page */
 .frontContainer {
     background-image: url("https://media4.giphy.com/media/nqtA5obHo3CSelfeKS/source.gif");
@@ -177,7 +178,7 @@ header {
 }
 
 .buttonWrapper{
-    background-color: rgba(48, 7, 2, 0);
+    background-color: rgba(0, 0, 0, 0.906);
     padding: 20px;
     border-style: none;
     border-radius: 50%;
@@ -186,16 +187,15 @@ header {
 
 
 .buttonWrapper:hover{
-    padding: 40px;
-    background-color: white;
+    background-color: rgba(85, 126, 107, 0.283);
 }
 
 .chefsName_underImg {
-    font-family: 'Playfair Display', serif;
-    margin-top: 20px;
-    font-weight: bolder;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    margin-top: 25px;
     margin-bottom: 20px;
-    text-decoration: underline overline;
+    color: black;
 }
 
 .chefsName {
@@ -367,3 +367,73 @@ header {
     margin-right:auto;
     margin-bottom: 20px;
 }
+
+/* location page */
+.locationBackground {
+    background-image: url("https://i.pinimg.com/originals/cb/8b/ce/cb8bce86a9335c4b7ea5aa1b36b555de.jpg");
+    height: 2050px;
+    background-size: cover;
+}
+
+.imageContainer {
+  padding-top: 500px;
+}
+
+.locationHeader{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 400px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 90px;
+    text-shadow:
+   -1px -1px 0 rgb(0, 0, 0),  
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+     1px 1px 0 rgb(255, 255, 255);
+}
+
+.locationInfoContainer {
+    margin-top: 70px;
+    text-align: center;
+    background-color: rgba(23, 2, 2, 0.897);
+    background-size: cover;
+    height: 350px;
+    padding: 30px;
+}
+
+.locationInfo{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.locationAtag {
+    color: white!important;
+}
+
+.d-block {
+    height: 950px;
+} 
+
+.getDirections {
+    background-color: rgb(56, 71, 65);
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: solid;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+
+}
+
+

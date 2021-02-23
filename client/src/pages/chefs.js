@@ -74,18 +74,19 @@ class Chefs extends Component {
                             </img>
                         </button>
                         <h1 className="chefsName_underImg">
-                            Chef Lohelani Hicks
+                            Chef Lohelani <br/>Hicks
                             </h1>
                     </div>
-                    <div className="col">
-                        <button className="buttonWrapper" onClick={this.openSecondModal}>
-                            <img className="chefsImg" src="https://i.postimg.cc/jSnXx31d/omgchristian.png" alt="headshot">
+                      <div className="col">
+                        <button className="buttonWrapper" onClick={this.openFifthModal}>
+                            <img className="chefsImg" src="https://i.postimg.cc/HszG0nW7/resizedaaron.png" alt="headshot">
                             </img>
                         </button>
-                        <h1 className="chefsName_underImg">
-                            Chef Julian Sgarzi
+                        <h1 className="chefsName_underImg lastName">
+                            Chef Aaron <br/>Lu
                             </h1>
                     </div>
+                    
                 </div>
                 <div className="row chefsContainer">
                     <div className="col">
@@ -94,7 +95,7 @@ class Chefs extends Component {
                             </img>
                         </button>
                         <h1 className="chefsName_underImg">
-                            Chef Vanessa Orellana
+                            Chef Vanessa <br/>Orellana
                             </h1>
                     </div>
                     <div className="col">
@@ -103,18 +104,18 @@ class Chefs extends Component {
                             </img>
                         </button>
                         <h1 className="chefsName_underImg">
-                            Chef Maxwell Yu
+                            Chef Maxwell <br/>Yu
                             </h1>
                     </div>
                 </div>
                 <div className="row chefsContainer">
-                    <div className="col">
-                        <button className="buttonWrapper" onClick={this.openFifthModal}>
-                            <img className="chefsImg" src="https://i.postimg.cc/HszG0nW7/resizedaaron.png" alt="headshot">
+                      <div className="col">
+                        <button className="buttonWrapper" onClick={this.openSecondModal}>
+                            <img className="chefsImg" src="https://i.postimg.cc/jSnXx31d/omgchristian.png" alt="headshot">
                             </img>
                         </button>
-                        <h1 className="chefsName_underImg lastName">
-                            Chef Aaron Lu
+                        <h1 className="chefsName_underImg">
+                            Chef Julian <br/>Sgarzi
                             </h1>
                     </div>
                 </div>
