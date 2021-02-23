@@ -369,37 +369,71 @@ header {
 }
 
 /* location page */
+.locationBackground {
+    background-image: url("https://i.pinimg.com/originals/cb/8b/ce/cb8bce86a9335c4b7ea5aa1b36b555de.jpg");
+    height: 2050px;
+    background-size: cover;
+}
+
 .imageContainer {
   padding-top: 500px;
 }
 
 .locationHeader{
-    padding-top: 180px;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 400px;
     text-align: center;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    color: black;
-    font-size: 60px;
+    font-size: 90px;
     text-shadow:
    -1px -1px 0 rgb(0, 0, 0),  
-    1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(255, 255, 255),
     -1px 1px 0 rgb(255, 255, 255),
      1px 1px 0 rgb(255, 255, 255);
 }
 
 .locationInfoContainer {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 70px;
     text-align: center;
+    background-color: rgba(23, 2, 2, 0.897);
+    background-size: cover;
+    height: 350px;
+    padding: 30px;
 }
 
-.locationInfo {
-    font-family: 'Montserrat', sans-serif;
+.locationInfo{
+    font-family: 'Playfair Display', serif;
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+    text-transform: uppercase;
+    color: white;
 }
 
-.mapContainer {
- 
+.locationAtag {
+    color: white!important;
 }
+
+.d-block {
+    height: 950px;
+} 
+
+.getDirections {
+    background-color: rgb(56, 71, 65);
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: solid;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+
+}
+
+
