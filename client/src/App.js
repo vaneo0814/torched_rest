@@ -10,6 +10,8 @@ import Events from "./pages/events.js"
 import Safety from "./pages/safety.js";
 import NoMatch from "./pages/nomatch.js";
 import Login from "./pages/login.js";
+import Location from "./pages/location.js";
+
 import './App.css';
 
 function App() {
@@ -42,6 +44,9 @@ function App() {
     </Route>
     <Route path="/login">
       <Login />
+    </Route>
+    <Route path="/location">
+      <Location />
     </Route>
   </Switch>
     <Footer/>

@@ -367,3 +367,39 @@ header {
     margin-right:auto;
     margin-bottom: 20px;
 }
+
+/* location page */
+.imageContainer {
+  padding-top: 500px;
+}
+
+.locationHeader{
+    padding-top: 180px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 60px;
+    text-shadow:
+   -1px -1px 0 rgb(0, 0, 0),  
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(255, 255, 255),
+     1px 1px 0 rgb(255, 255, 255);
+}
+
+.locationInfoContainer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.locationInfo {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.mapContainer {
+ 
+}
