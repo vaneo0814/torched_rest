@@ -1,8 +1,8 @@
 import React, { createContext, useReducer, useContext } from "react";
 import {
-    SET_CURRENT_MENUITEM,
+    //SET_CURRENT_MENUITEM,
     REMOVE_MENUITEM,
-    UPDATE_MENUITEMS,
+    GET_MENUITEMS,
     ADD_MENUITEM,
     LOADING,
     UPDATE_MENUITEM
@@ -13,14 +13,14 @@ const { Provider } = StoreContext;
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case SET_CURRENT_MENUITEM:
-            return {
-                ...state,
-                currentMenuItem: action.menuItem,
-                loading: false
-            };
+        // case SET_CURRENT_MENUITEM:
+        //     return {
+        //         ...state,
+        //         currentMenuItem: action.menuItem,
+        //         loading: false
+        //     };
 
-        case UPDATE_MENUITEMS:
+        case GET_MENUITEMS:
             return {
                 ...state,
                 menuItems: [...action.menuItems],

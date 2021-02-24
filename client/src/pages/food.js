@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 //import { Col, Row, Container } from "../components/Grid";
 import { ListItem, List } from "../components/List";
 import DeleteBtn from "../components/ItemDeleteBtn";
+import UpdateBtn from "../components/UpdateBtn";
 import CreateMenuItem from "../components/CreateMenuItem";
 //import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GLOBALSTATE";
-import { SET_CURRENT_MENUITEM, LOADING, UPDATE_MENUITEMS, REMOVE_MENUITEM } from "../utils/actions";
+import { LOADING, GET_MENUITEMS, REMOVE_MENUITEM, UPDATE_MENUITEM } from "../utils/actions";
 
 //, ADD_FAVORITE, REMOVE_FAVORITE } 
 
@@ -27,8 +28,18 @@ function MenuItemList() {
         dispatch({type: LOADING });
         API.getMenuItems().then(results => {
             dispatch ({
-            type: UPDATE_MENUITEMS,
+            type: GET_MENUITEMS,
             menuItems: results.data
+            });
+        }).catch(err => console.log(err))
+    };
+
+    const updateMenuItem = (id) => {
+        // console.log(id);
+        API.updateMenuItem(id).then(results => {
+            dispatch({
+                type: UPDATE_MENUITEM,
+                currentMenuItem: results.data
             });
         }).catch(err => console.log(err))
     };
@@ -53,6 +64,8 @@ return (
                     </strong> 
                     </Link>
                     <DeleteBtn onClick={() => removeMenuItem(currentMenuItem._id)}/>
+                    <UpdateBtn onClick={() => updateMenuItem(currentMenuItem._id)}/>
+                    
                     </ListItem>
                 ))}
             </List>

@@ -58,9 +58,10 @@ function App() {
       {/* <Login /> */}
       <Route path="/menu"
       component={Menu}/>
-        {/* <Menu /> */}
-      {/* </Route> */}
-    {/* </Route> */}
+
+      <Route path="/location"
+      component={Location}/>
+        
 
   </Switch>
     <Footer/>
