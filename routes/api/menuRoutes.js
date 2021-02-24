@@ -5,13 +5,13 @@ const menuController = require("../../controllers/menuControllers");
 router
   .route("/")
   .get(menuController.findAll)
+  .put(menuController.update)
   .post(menuController.create);
 
 // Matches with "/api/menu/:id"
 router
   .route("/:id")
   .get(menuController.findById)
-  .put(menuController.update)
   .delete(menuController.remove);
 
 module.exports = router;
