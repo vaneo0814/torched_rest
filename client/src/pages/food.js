@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 //import { Col, Row, Container } from "../components/Grid";
 import { ListItem, List } from "../components/List";
 import DeleteBtn from "../components/ItemDeleteBtn";
@@ -37,18 +37,18 @@ function MenuItemList() {
     };
 
     const updateMenuItem = (id) => {
-        console.log("update clicked");
-        API.updateMenuItem(id).then(results => {
-            dispatch({
-                type: UPDATE_MENUITEM,
-                currentMenuItem: results.data               
-            });
+        window.location.replace("/updateitem/" + id)
+        // API.updateMenuItem(id).then(results => {
+        //     dispatch({
+        //         type: UPDATE_MENUITEM,
+        //         currentMenuItem: results.data               
+        //     });
             
-        })
-        .then(function () {
-            window.location.replace("/updateitem");
-        })
-        .catch(err => console.log(err))
+        // })
+        // .then(function () {
+        //     window.location.replace("/updateitem");
+        // })
+        // .catch(err => console.log(err))
     };
 
     useEffect(() => {

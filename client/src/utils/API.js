@@ -18,8 +18,8 @@ export default {
   saveMenuItem: function(menuData) {
     return axios.post("/api/menu", menuData);
   },
-  updateMenuItem: function(id) {
+  updateMenuItem: function(id, data) {
     // console.log(id)
-    return axios.put("/api/menu/", id);
+    return axios.put("/api/menu/" + id, data);
   }
 };
