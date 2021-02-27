@@ -48,18 +48,6 @@ function UpdateItemForm(props) {
   
 
     const handleSubmit = () => {
-        // e.preventDefault();
-        // const updateMenuItem = (id) => {
-        //     console.log("update clicked");
-        //     API.updateMenuItem(id).then(results => {
-        //         dispatch({
-        //             type: UPDATE_MENUITEM,
-        //             currentMenuItem: results.data
-        //         });
-        //     }).then(function () {
-        //         window.location.replace("/menu");
-        //     }).catch(err => console.log(err))
-        // };
 
         dispatch({
             type: LOADING
@@ -73,6 +61,7 @@ function UpdateItemForm(props) {
                 type: UPDATE_MENUITEM,
                 currentMenuItem: result.data
             });
+        }).then(function () {
             window.location.replace("/menu");
         }).catch(err => console.log(err));
 
@@ -97,12 +86,14 @@ function UpdateItemForm(props) {
                 </button>
 
                 {/* not working because of required ref */}
-                <button className="btn btn-success mt-3 mb-5 ml-2"  type="submit" >
-                    Go Back
-                </button>
+                
             </form>
 
-
+<button className="btn btn-success mt-3 mb-5 ml-2"  type="submit" >
+                    <a href="/menu">
+                    Go Back
+                    </a>
+                </button>
         </div>
     );
 }

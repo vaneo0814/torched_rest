@@ -53,11 +53,13 @@ function CreateItemForm() {
                 </button>
 
                 {/* not working because of required ref */}
-                <button className="btn btn-success mt-3 mb-5 ml-2"  type="submit" >
-                    Go Back
-                </button>
+                
             </form>
-
+            <button className="btn btn-success mt-3 mb-5 ml-2"  type="submit" >
+                    <a href="/menu">
+                    Go Back
+                    </a>
+                </button>
 
         </div>
     );
