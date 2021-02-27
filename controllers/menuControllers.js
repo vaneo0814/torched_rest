@@ -19,9 +19,9 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
-    // menuDB.Menu.findOneAndUpdate({ _id: req.params.id }, req.body)
-    //   .then(dbModel => res.json(dbModel))
-    //   .catch(err => res.status(422).json(err));
+    menuDB.Menu.findOneAndUpdate({ _id: req.params.id }, req.body)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
     console.log("fdsjkladg;")
   },
   remove: function(req, res) {

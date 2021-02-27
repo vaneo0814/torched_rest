@@ -1,8 +1,6 @@
 import React from "react";
-import "./style.css";
-import { FaPencilAlt } from 'react-icons/fa';
-
-//might need to map through button for id grab?
+//import "./style.css";
+//import { FaPencilAlt } from 'react-icons/fa';
 
 function UpdateBtn(props) {
   return (
@@ -13,5 +11,3 @@ function UpdateBtn(props) {
 }
 
 export default UpdateBtn;
-
-// button here on the other page just needs to route to this component
