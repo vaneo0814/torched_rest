@@ -6,7 +6,8 @@ import About from "./pages/about.js";
 import Careers from "./pages/careers.js";
 import Contact from "./pages/contactus.js";
 import Chefs from "./pages/chefs.js";
-import Menu from "./pages/food";
+import EmployeeMenu from "./pages/food";
+import Menu from "./pages/publicMenu";
 import Events from "./pages/events.js"
 import Safety from "./pages/safety.js";
 import Login from "./pages/login.js";
@@ -40,10 +41,13 @@ function App() {
               component={Safety} />
             <Route path="/login"
               component={Login} />
-            <Route path="/menu"
-              component={Menu} />
             <Route path="/location"
               component={Location} />
+              <Route path="/menu"
+              component={Menu}/>
+            <Route path="/employeemenu"
+              component={EmployeeMenu} />
+              {/* need firebase on /menu /updateitem /addnewitem */}
             <Route path="/additem"
               component={AddNewItem} />
             <Route path="/updateitem/:id"

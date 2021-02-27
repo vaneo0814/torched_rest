@@ -29,8 +29,9 @@ function CreateItemForm() {
                 currentMenuItem: result.data
             });
         }).then(function () {
-            window.location.replace("/menu");
+            window.location.replace("/employeemenu");
         }).catch(err => console.log(err));
+        //possible bug with above reroute
 
         titleRef.current.value = "";
         bodyRef.current.value = "";
@@ -49,14 +50,14 @@ function CreateItemForm() {
                 <textarea className="form-control mb-5" required ref={bodyRef} placeholder="Description" />
                 <input className="form-control mb-5" required ref={priceRef} placeholder="Price" />
                 <button className="btn btn-success mt-3 mb-5 mr-2" disabled={state.loading} type="submit" >
+                    <a href="employeemenu">
                     Save New Menu Item
+                    </a>
                 </button>
-
-                {/* not working because of required ref */}
                 
             </form>
             <button className="btn btn-success mt-3 mb-5 ml-2"  type="submit" >
-                    <a href="/menu">
+                    <a href="/employeemenu">
                     Go Back
                     </a>
                 </button>
