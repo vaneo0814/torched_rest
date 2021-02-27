@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import { ListItem, List } from "../components/List";
 import DeleteBtn from "../components/ItemDeleteBtn";
 import UpdateBtn from "../components/UpdateBtn";
-import CreateMenuItem from "../components/CreateMenuItem";
+//import CreateMenuItem from "../components/CreateMenuItem";
 //import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GLOBALSTATE";
 import { LOADING, GET_MENUITEMS, REMOVE_MENUITEM, UPDATE_MENUITEM } from "../utils/actions";
+//import { FaPencilAlt } from 'react-icons/fa';
+
 
 //, ADD_FAVORITE, REMOVE_FAVORITE } 
 
@@ -35,17 +37,23 @@ function MenuItemList() {
     };
 
     const updateMenuItem = (id) => {
-        // console.log(id);
+        console.log("update clicked");
         API.updateMenuItem(id).then(results => {
             dispatch({
                 type: UPDATE_MENUITEM,
-                currentMenuItem: results.data
+                currentMenuItem: results.data               
             });
-        }).catch(err => console.log(err))
+            
+        })
+        .then(function () {
+            window.location.replace("/updateitem");
+        })
+        .catch(err => console.log(err))
     };
 
     useEffect(() => {
         getMenuItems();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 console.log(state);
@@ -53,7 +61,7 @@ console.log("menu items rendered");
 
 return (
     <div>
-        <h1>Menu</h1>
+        <h1 className="menuHeader">Menu</h1>
         {state.menuItems.length ? (
             <List>
                 {state.menuItems.map(currentMenuItem => (
@@ -64,17 +72,17 @@ return (
                     </strong> 
                     </Link>
                     <DeleteBtn onClick={() => removeMenuItem(currentMenuItem._id)}/>
-                    <UpdateBtn onClick={() => updateMenuItem(currentMenuItem._id)}/>
-                    
+
+                    <UpdateBtn onClick={() => updateMenuItem(currentMenuItem._id)}/>                      
                     </ListItem>
                 ))}
             </List>
         ) : (
             <h3>You haven't added any menu items yet!</h3>
         )}
-
-        
-        <CreateMenuItem/>
+{/* this needs to be a link to the update page like in update blog post */}
+       {/* <CreateMenuItem/> */}
+       <Link to={"/additem"} className="btn btn-success mt-3 mb-5" role="button" tabIndex="0">Add New Menu Item Here</Link>
     </div>
 
 )

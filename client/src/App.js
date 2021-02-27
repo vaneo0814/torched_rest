@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navigation from './components/nav/nav.js';
 import Footer from './components/footer/footer.js';
 import Home from "./pages/home.js";
@@ -7,66 +7,52 @@ import Careers from "./pages/careers.js";
 import Contact from "./pages/contactus.js";
 import Chefs from "./pages/chefs.js";
 import Menu from "./pages/food";
-//import { StoreProvider } from "./utils/GlobalState";
 import Events from "./pages/events.js"
 import Safety from "./pages/safety.js";
-//import NoMatch from "./pages/nomatch.js";
 import Login from "./pages/login.js";
 import Location from "./pages/location.js";
-
+import AddNewItem from "./pages/addnewitem";
+import UpdateItem from "./pages/updateItem";
 import './App.css';
 import { StoreProvider } from './utils/GLOBALSTATE';
+
 
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-    <StoreProvider>
-      <Navigation/>
-      {/* Routes  */}
-      <Switch>
-    <Route exact path="/"
-    component={Home}/>
-      {/* <Home /> */}
-    {/* </Route> */}
-    <Route path="/about"
-    component={About} />
-      {/* <About />
-    </Route> */}
-    <Route path="/careers"
-    component={Careers}/>
-      {/* <Careers />
-    </Route> */}
-    <Route path="/contact"
-    component={Contact}/>
-      {/* <Contact />
-    </Route> */}
-    <Route path="/chefs"
-    component={Chefs}/>
-      {/* <Chefs />
-    </Route> */}
-    <Route path="/events"
-    component={Events}/>
-      {/* <Events />
-    </Route> */}
-    <Route path="/safety"
-    component={Safety}/>
-      {/* <Safety />
-    </Route> */}
-    <Route path="/login"
-    component={Login}/>
-      {/* <Login /> */}
-      <Route path="/menu"
-      component={Menu}/>
+      <div className="App">
+        <StoreProvider>
+          <Navigation />
+          <Switch>
+            <Route exact path="/"
+              component={Home} />
+            <Route path="/about"
+              component={About} />
+            <Route path="/careers"
+              component={Careers} />
+            <Route path="/contact"
+              component={Contact} />
+            <Route path="/chefs"
+              component={Chefs} />
+            <Route path="/events"
+              component={Events} />
+            <Route path="/safety"
+              component={Safety} />
+            <Route path="/login"
+              component={Login} />
+            <Route path="/menu"
+              component={Menu} />
+            <Route path="/location"
+              component={Location} />
+            <Route path="/additem"
+              component={AddNewItem} />
+            <Route path="/updateitem"
+              component={UpdateItem} />
 
-      <Route path="/location"
-      component={Location}/>
-        
-
-  </Switch>
-    <Footer/>
-    </StoreProvider>
-    </div>
+          </Switch>
+          <Footer />
+        </StoreProvider>
+      </div>
     </BrowserRouter>
   );
 }
