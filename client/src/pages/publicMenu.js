@@ -10,15 +10,6 @@ import { LOADING, GET_MENUITEMS, REMOVE_MENUITEM } from "../utils/actions";
 function MenuItemList() {
     const [state, dispatch] = useStoreContext();
 
-    const removeMenuItem = id => {
-        API.deleteMenuItem(id).then(() => {
-            dispatch({
-                type: REMOVE_MENUITEM,
-                _id: id
-            });
-        }).catch(err => console.log(err));
-    };
-
     const getMenuItems = () => {
         dispatch({type: LOADING });
         API.getMenuItems().then(results => {
@@ -28,29 +19,13 @@ function MenuItemList() {
             });
         }).catch(err => console.log(err))
     };
-
-    const updateMenuItem = (id) => {
-        window.location.replace("/updateitem/" + id)
-        // API.updateMenuItem(id).then(results => {
-        //     dispatch({
-        //         type: UPDATE_MENUITEM,
-        //         currentMenuItem: results.data               
-        //     });
-            
-        // })
-        // .then(function () {
-        //     window.location.replace("/updateitem");
-        // })
-        // .catch(err => console.log(err))
-    };
+   
 
     useEffect(() => {
         getMenuItems();
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-console.log(state);
-console.log("menu items rendered");
 
 return (
     <div>
