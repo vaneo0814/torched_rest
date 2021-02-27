@@ -45,8 +45,6 @@ function UpdateItemForm(props) {
         document.getElementById('price').value = data.price;
     }
 
-  
-
     const handleSubmit = () => {
 
         dispatch({
@@ -62,12 +60,9 @@ function UpdateItemForm(props) {
                 currentMenuItem: result.data
             });
         }).then(function () {
-            window.location.replace("/menu");
+            window.location.replace("/employeemenu");
         }).catch(err => console.log(err));
-
-        // titleRef.current.value = "";
-        // bodyRef.current.value = "";
-        // priceRef.current.value = "";
+//bug on the window.replace...
     };
 
 
@@ -85,12 +80,10 @@ function UpdateItemForm(props) {
                     Save Updated Item
                 </button>
 
-                {/* not working because of required ref */}
                 
             </form>
-
 <button className="btn btn-success mt-3 mb-5 ml-2"  type="submit" >
-                    <a href="/menu">
+                    <a href="/employeemenu">
                     Go Back
                     </a>
                 </button>

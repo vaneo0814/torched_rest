@@ -64,18 +64,13 @@ return (
                         {currentMenuItem.title} - {currentMenuItem.price} : {currentMenuItem.body}
                     </strong> 
                     </Link>
-                    <DeleteBtn onClick={() => removeMenuItem(currentMenuItem._id)}/>
-
-                    <UpdateBtn onClick={() => updateMenuItem(currentMenuItem._id)}/>                      
+                        
                     </ListItem>
                 ))}
             </List>
         ) : (
             <h3>You haven't added any menu items yet!</h3>
         )}
-{/* this needs to be a link to the update page like in update blog post */}
-       {/* <CreateMenuItem/> */}
-       <Link to={"/additem"} className="btn btn-success mt-3 mb-5" role="button" tabIndex="0">Add New Menu Item Here</Link>
     </div>
 
 )
