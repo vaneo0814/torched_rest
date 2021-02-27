@@ -46,7 +46,7 @@ function App() {
               component={Location} />
             <Route path="/additem"
               component={AddNewItem} />
-            <Route path="/updateitem"
+            <Route path="/updateitem/:id"
               component={UpdateItem} />
 
           </Switch>
