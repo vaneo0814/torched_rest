@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ListItem, List } from "../components/List";
-import DeleteBtn from "../components/ItemDeleteBtn";
-import UpdateBtn from "../components/UpdateBtn";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GLOBALSTATE";
-import { LOADING, GET_MENUITEMS, REMOVE_MENUITEM } from "../utils/actions";
+import { LOADING, GET_MENUITEMS } from "../utils/actions";
 
 function MenuItemList() {
     const [state, dispatch] = useStoreContext();
@@ -19,7 +17,6 @@ function MenuItemList() {
             });
         }).catch(err => console.log(err))
     };
-   
 
     useEffect(() => {
         getMenuItems();

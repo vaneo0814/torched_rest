@@ -1,24 +1,30 @@
 .list-overflow-container {
   max-height: 545px;
-  border: 1px #dddddd solid;
   border-radius: 4px;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-left:50px;
+  padding-right: 50px;
+  padding-bottom:50px;
 }
 
 .list-overflow-container ul {
   margin: 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .list-overflow-container li {
   border-radius: 0px;
   border-left: none;
   border-right: none;
+  list-style-type: none;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  padding:15px;
+  font-size: 20px;
 }
 
-/* .list-overflow-container li * {
-  text-decoration: none;
-} */
+
 
 .list-overflow-container li a {
   color: #2a878c;

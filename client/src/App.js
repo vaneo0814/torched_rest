@@ -6,7 +6,7 @@ import About from "./pages/about.js";
 import Careers from "./pages/careers.js";
 import Contact from "./pages/contactus.js";
 import Chefs from "./pages/chefs.js";
-import EmployeeMenu from "./pages/food";
+import EmployeeMenu from "./pages/employeeMenu";
 import Menu from "./pages/publicMenu";
 import Events from "./pages/events.js"
 import Safety from "./pages/safety.js";
