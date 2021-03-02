@@ -28,7 +28,7 @@ export default function Contact(){
                 <form onSubmit={sendEmail}>
                     <input type="text" className="form-control" placeholder="Name" name="name" required/>
                     <br/>
-                    <input type="text" className="form-control" placeholder="Email" name="email" required/>
+                    <input type="email" className="form-control" placeholder="Email" name="email" required/>
                     <br/>
                     <input type="text" className="form-control" placeholder="Subject" name="subject" required/>
                     <br/>
