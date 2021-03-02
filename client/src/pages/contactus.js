@@ -16,12 +16,12 @@ export default function Contact(){
           e.target.reset();
     }
     return(
-        <div className="genBackground">
+        <div className="contactBackground">
             <header className="contactHeader">
                 Contact Us
             </header>
             <p className="contactInfop">
-            Questions, ideas, or feedback are welcome — if not encouraged.<br/> Feel free to contact us at <a href="mailto:heyo@torch.com">heyo@torch.com</a> or complete the form below.
+            Questions, ideas, or feedback are welcome — if not encouraged.<br/> Feel free to contact us at <a href="mailto:heyo@torch.com"><em>heyo@torch.com</em></a> or complete the form below.
             </p>
             <hr/>
             <div className="contact-form-container">
@@ -34,7 +34,7 @@ export default function Contact(){
                     <br/>
                     <textarea className="form-control" placeholder="Message" row="4" name="message" required/>
                     <br/>
-                    <input type="submit" className="form-control-submit" value="Send"/>
+                    <input type="submit" className="form-control-submitBtn" value="Send"/>
                 </form>
             </div>
 

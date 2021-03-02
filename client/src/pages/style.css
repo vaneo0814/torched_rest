@@ -462,7 +462,14 @@ header {
 
 
 
-/* contact page */
+/* contact us page */
+
+.contactBackground {
+    background-image: url("https://i.pinimg.com/originals/cb/8b/ce/cb8bce86a9335c4b7ea5aa1b36b555de.jpg");
+    background-size: cover;
+    height: 900px;
+}
+
 .contactHeader {
     font-weight: bolder;
 }
@@ -471,3 +478,31 @@ header {
     text-align: center;
     font-weight: bold;
 }
+
+.form-control-submitBtn {
+    background-color: rgba(56, 71, 65, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: black;
+}
+
+.form-control-submitBtn:hover{
+    background-color: rgba(250, 251, 252, 0.623);
+}
+
+.contact-form-container {
+    background-color: rgb(155, 143, 143);
+    width: 800px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+
