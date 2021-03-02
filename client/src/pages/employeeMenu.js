@@ -33,22 +33,10 @@ function MenuItemList() {
 
     const updateMenuItem = (id) => {
         window.location.replace("/updateitem/" + id)
-        // API.updateMenuItem(id).then(results => {
-        //     dispatch({
-        //         type: UPDATE_MENUITEM,
-        //         currentMenuItem: results.data               
-        //     });
-            
-        // })
-        // .then(function () {
-        //     window.location.replace("/updateitem");
-        // })
-        // .catch(err => console.log(err))
     };
 
     useEffect(() => {
         getMenuItems();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 console.log(state);
@@ -81,7 +69,7 @@ return (
         
 {/* this needs to be a link to the update page like in update blog post */}
        {/* <CreateMenuItem/> */}
-       <Link to={"/additem"} className="btn btn-success mt-3 mb-5" role="button" tabIndex="0">Add New Menu Item Here</Link>
+       <Link to={"/additem"} className="btn btn-secondary mt-3 mb-5" role="button" tabIndex="0">Add New Menu Item Here</Link>
     </div>
 
 )

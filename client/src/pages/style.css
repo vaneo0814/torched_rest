@@ -439,10 +439,7 @@ header {
 
 /* menu page */
 
-.menu-list-item {
-    border-radius: 0;
-    
-}
+
 
 .menu-header {
     font-family: 'Playfair Display', serif;
@@ -459,4 +456,18 @@ header {
 .menuBackground > h1 {
     padding-top:170px;
     padding-bottom: 35px;
+}
+
+/* update page */
+
+
+
+/* contact page */
+.contactHeader {
+    font-weight: bolder;
+}
+
+.contactInfop {
+    text-align: center;
+    font-weight: bold;
 }

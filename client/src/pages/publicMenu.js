@@ -25,8 +25,8 @@ function MenuItemList() {
 
 
 return (
-    <div>
-        <h1 className="menuHeader">Menu</h1>
+    <div className="menuBackground">
+        <h1 className="menu-header">Menu</h1>
         {state.menuItems.length ? (
             <List>
                 {state.menuItems.map(currentMenuItem => (
