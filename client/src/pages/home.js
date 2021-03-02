@@ -54,7 +54,7 @@ function Home() {
         )}
       >
         <div style={{ height: 500 }}>
-          <Link to="/food">
+          <Link to="/menu">
             <div className="menuBtn">Menu</div>
           </Link>
         </div>

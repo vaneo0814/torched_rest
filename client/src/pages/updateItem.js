@@ -2,22 +2,23 @@ import React, { useRef, useState, useEffect } from "react";
 import { useStoreContext } from "../utils/GLOBALSTATE";
 import { ADD_MENUITEM, LOADING, UPDATE_MENUITEM } from "../utils/actions";
 import API from "../utils/API";
+import "./style.css"
 //import Menu from "../pages/food"
 
 function UpdateItemForm(props) {
 
     const url = window.location.pathname.split("/")
-    const menuId = url[url.length-1];
+    const menuId = url[url.length - 1];
 
     let [menuObj, setMenuObj] = useState();
-    
+
     useEffect(() => {
         API.getMenuItem(menuId).then(res => {
             setMenuObj(res.data)
             updateform(res.data)
         });
     }, []);
-    
+
     console.log(menuObj)
 
     const titleRef = useRef();
@@ -38,7 +39,7 @@ function UpdateItemForm(props) {
     //     }).catch(err => console.log(err))
     // };
 
-    function updateform (data) {
+    function updateform(data) {
         console.log(data)
         document.getElementById('name').value = data.title;
         document.getElementById('description').value = data.body;
@@ -50,7 +51,7 @@ function UpdateItemForm(props) {
         dispatch({
             type: LOADING
         });
-        API.updateMenuItem(menuId,{
+        API.updateMenuItem(menuId, {
             title: titleRef.current.value,
             body: bodyRef.current.value,
             price: priceRef.current.value
@@ -62,31 +63,31 @@ function UpdateItemForm(props) {
         }).then(function () {
             window.location.replace("/employeemenu");
         }).catch(err => console.log(err));
-//bug on the window.replace...
+        //bug on the window.replace...
     };
 
 
 
     return (
-        <div>
-            <div className="jumbotron">
+        <div className="menuBackground">
+            <h1 className="menu-header">
                 Update Menu Item:
-            </div>
+            </h1>
             <form className="form-group mt-5 mb-5" onSubmit={handleSubmit}>
                 <input id="name" className="form-control mb-5" required ref={titleRef} placeholder="Name"></input>
                 <textarea id="description" className="form-control mb-5" required ref={bodyRef} placeholder="Description" />
                 <input id="price" className="form-control mb-5" required ref={priceRef} placeholder="Price" />
-                <button className="btn btn-success mt-3 mb-5 mr-2" disabled={state.loading} type="submit" >
+                <button className="btn btn-secondary mt-3 mb-5 mr-2" disabled={state.loading} type="submit" >
                     Save Updated Item
                 </button>
 
-                
+
             </form>
-<button className="btn btn-success mt-3 mb-5 ml-2"  type="submit" >
-                    <a href="/employeemenu">
+            <button className="btn btn-secondary mt-3 mb-5 ml-2" type="submit" >
+                <a href="/employeemenu">
                     Go Back
                     </a>
-                </button>
+            </button>
         </div>
     );
 }

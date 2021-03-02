@@ -3,6 +3,7 @@ import { useStoreContext } from "../utils/GLOBALSTATE";
 import { ADD_MENUITEM, LOADING } from "../utils/actions";
 import API from "../utils/API";
 //import Menu from "../pages/food"
+import "./style.css"
 
 function CreateItemForm() {
 
@@ -41,22 +42,22 @@ function CreateItemForm() {
 
 
     return (
-        <div>
-            <div className="jumbotron">
+        <div className="menuBackground">
+            <h1 className="menu-header">
                 Add Menu Item:
-            </div>
+            </h1>
             <form className="form-group mt-5 mb-5" onSubmit={handleSubmit}>
                 <input className="form-control mb-5" required ref={titleRef} placeholder="Name" />
                 <textarea className="form-control mb-5" required ref={bodyRef} placeholder="Description" />
                 <input className="form-control mb-5" required ref={priceRef} placeholder="Price" />
-                <button className="btn btn-success mt-3 mb-5 mr-2" disabled={state.loading} type="submit" >
+                <button className="btn btn-secondary mt-3 mb-5 mr-2" disabled={state.loading} type="submit" >
                     <a href="employeemenu">
                     Save New Menu Item
                     </a>
                 </button>
                 
             </form>
-            <button className="btn btn-success mt-3 mb-5 ml-2"  type="submit" >
+            <button className="btn btn-secondary mt-3 mb-5 ml-2"  type="submit" >
                     <a href="/employeemenu">
                     Go Back
                     </a>

@@ -246,7 +246,13 @@ header {
 .eventsHeader {
     margin-top: 100px;
     font-size: 60px;
+    color: black;
     font-family: 'Montserrat', sans-serif;
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),  
+     1px -1px 0 rgb(0, 0, 0),
+     -1px 1px 0 rgb(0, 0, 0),
+      1px 1px 0 rgb(0, 0, 0);
 }
 
 .newWaytoDine {
@@ -266,8 +272,9 @@ header {
 
 .eventsContent {
     background-image: url("https://i.pinimg.com/originals/39/48/95/394895c3347439f04907753200533042.jpg");
-    margin-top: 40px;
+    margin-top: 120px;
     padding: 40px;
+    border-style: solid;
 }
 
 .bookBtn {
@@ -286,6 +293,85 @@ header {
 .bookBtn:hover{
     background-color: rgba(13, 31, 0, 0.959);
     color: white;
+}
+
+.bookEvent-form-container {
+    padding: 20px;
+    width: 1000px;
+    margin-top: 100px;
+}
+
+.modalHeader {
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    color: black;
+}
+
+.form-control-submitBtn {
+    background-color: rgba(56, 71, 65, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    width: 200px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: black;
+}
+
+::placeholder {
+    color: black!important;
+    opacity: 1!important;
+}
+
+.closeBtnEvents {
+    position: relative;
+    top: 200px;
+    right: 400px;
+    font-size: 80px;
+    background-color: rgba(138, 132, 132, 0.338);
+    color: white;
+    border-style: none;
+}
+
+.closeBtnEvents:hover{
+    color: rgb(77, 7, 7);
+}
+
+.form-control-submitEventBtn {
+    background-color: rgba(56, 71, 65, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.form-control-submitEventBtn:hover{
+    background-color: rgba(0, 2, 3, 0.623)!important;
+    color: white!important;
+}
+
+input, textarea {
+    background-color:rgba(133, 129, 124, 0)!important;
+    height: 50px!important;
+    border-style: solid;
+    border-color: black!important;
+    color: black!important;
+
 }
 
 /* safety page */
@@ -438,8 +524,69 @@ header {
 
 
 /* menu page */
+.menu-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    /* position: relative; */
+}    
 
-.menuHeader {
-    /*not doing anything*/
-    position: relative
+.menuBackground {
+    background-image: url("https://i.pinimg.com/originals/cb/8b/ce/cb8bce86a9335c4b7ea5aa1b36b555de.jpg");
+    background-size: cover;
 }
+
+.menuBackground > h1 {
+    padding-top:170px;
+    padding-bottom: 35px;
+}
+
+/* update page */
+
+
+
+/* contact us page */
+
+.contactBackground {
+    background-image: url("https://i.pinimg.com/originals/cb/8b/ce/cb8bce86a9335c4b7ea5aa1b36b555de.jpg");
+    background-size: cover;
+    height: 900px;
+}
+
+.contactHeader {
+    font-weight: bolder;
+}
+
+.contactInfop {
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-control-submitBtn {
+    background-color: rgba(56, 71, 65, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: black;
+}
+
+.form-control-submitBtn:hover{
+    background-color: rgba(0, 2, 3, 0.623)!important;
+    color: white!important;
+
+}
+
+.contact-form-container {
+    width: 800px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+

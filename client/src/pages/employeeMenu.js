@@ -6,6 +6,8 @@ import UpdateBtn from "../components/UpdateBtn";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GLOBALSTATE";
 import { LOADING, GET_MENUITEMS, REMOVE_MENUITEM } from "../utils/actions";
+//import {Container} from "mdbreact"
+import "./style.css"
 
 function MenuItemList() {
     const [state, dispatch] = useStoreContext();
@@ -31,34 +33,22 @@ function MenuItemList() {
 
     const updateMenuItem = (id) => {
         window.location.replace("/updateitem/" + id)
-        // API.updateMenuItem(id).then(results => {
-        //     dispatch({
-        //         type: UPDATE_MENUITEM,
-        //         currentMenuItem: results.data               
-        //     });
-            
-        // })
-        // .then(function () {
-        //     window.location.replace("/updateitem");
-        // })
-        // .catch(err => console.log(err))
     };
 
     useEffect(() => {
         getMenuItems();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 console.log(state);
 console.log("menu items rendered");
 
 return (
-    <div>
-        <h1 className="menuHeader">Menu</h1>
+    <div className="menuBackground">
+            <h1 className="menu-header">Menu</h1>
         {state.menuItems.length ? (
             <List>
                 {state.menuItems.map(currentMenuItem => (
-                    <ListItem key={currentMenuItem._id}> 
+                    <ListItem className="menu-list-item" key={currentMenuItem._id}> 
                     <Link to={"/menu/" + currentMenuItem._id}>
                        <strong>
                         {currentMenuItem.title} - {currentMenuItem.price} : {currentMenuItem.body}
@@ -73,9 +63,13 @@ return (
         ) : (
             <h3>You haven't added any menu items yet!</h3>
         )}
+        
+        
+        
+        
 {/* this needs to be a link to the update page like in update blog post */}
        {/* <CreateMenuItem/> */}
-       <Link to={"/additem"} className="btn btn-success mt-3 mb-5" role="button" tabIndex="0">Add New Menu Item Here</Link>
+       <Link to={"/additem"} className="btn btn-secondary mt-3 mb-5" role="button" tabIndex="0">Add New Menu Item Here</Link>
     </div>
 
 )
