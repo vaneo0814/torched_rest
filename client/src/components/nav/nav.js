@@ -7,6 +7,7 @@ class Navigation extends React.Component {
   state = {
     nav:false
   }
+  
   componentDidMount() {
      window.addEventListener("scroll", this.handleScroll);
    }
