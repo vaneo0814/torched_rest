@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { useStoreContext } from "../utils/GLOBALSTATE";
-import { ADD_MENUITEM, LOADING, UPDATE_MENUITEM } from "../utils/actions";
+import {  LOADING, UPDATE_MENUITEM } from "../utils/actions";
 import API from "../utils/API";
 import "./style.css"
 //import Menu from "../pages/food"
