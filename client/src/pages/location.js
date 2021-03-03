@@ -13,17 +13,23 @@ const containerStyle = {
     width: '100%',
     height: '600px',
     backgroundColor: 'black',
+    marginTop: '-65px'
 };
+
+const carouselstyle = {
+    width: '100%',
+    height: '600px'
+}
 
 class Location extends Component {
     render() {
         return (
             <div className="locationBackground">
-                <Carousel>
+                <Carousel style={carouselstyle}>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://i.pinimg.com/originals/57/85/22/57852274d222b1178d69f91198d1ab98.jpg"
+                            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FmZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
                             alt="First slide"
                         />
                         <Carousel.Caption>
@@ -33,7 +39,7 @@ class Location extends Component {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://media.architecturaldigest.com/photos/5e84f6f0070535000882dcda/16:9/w_2560%2Cc_limit/GettyImages-1155054059.jpg"
+                            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlJTIwc2hvcHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
                             alt="Second slide"
                         />
 
@@ -44,7 +50,7 @@ class Location extends Component {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://perfectdailygrind.com/wp-content/uploads/2017/02/cirquecoffee_9_2_2017_20_10_19_56-e1486751998432.jpg"
+                            src="https://fd-blog-uploads.s3.eu-west-1.amazonaws.com/wp-content/uploads/2018/04/24160604/latteart.jpg"
                             alt="Third slide"
                         />
 

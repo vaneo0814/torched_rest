@@ -471,7 +471,7 @@ input, textarea {
 /* location page */
 .locationBackground {
     background-image: url("https://i.pinimg.com/originals/cb/8b/ce/cb8bce86a9335c4b7ea5aa1b36b555de.jpg");
-    height: 2050px;
+    height: 1570px;
     background-size: cover;
 }
 
@@ -481,25 +481,20 @@ input, textarea {
 
 .locationHeader{
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 400px;
+    margin-bottom: 550px;
     text-align: center;
     text-transform: uppercase;
-    color: rgb(0, 0, 0);
+    color: white;
     font-weight: bold;
-    font-size: 90px;
-    text-shadow:
-   -1px -1px 0 rgb(0, 0, 0),  
-    1px -1px 0 rgb(255, 255, 255),
-    -1px 1px 0 rgb(255, 255, 255),
-     1px 1px 0 rgb(255, 255, 255);
+    font-size: 60px;
 }
 
 .locationInfoContainer {
-    margin-top: 70px;
+    margin-top: 20px;
     text-align: center;
     background-color: rgba(23, 2, 2, 0.897);
     background-size: cover;
-    height: 350px;
+    height: 300px;
     padding: 30px;
 }
 
@@ -507,7 +502,7 @@ input, textarea {
     font-family: 'Playfair Display', serif;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     color: white;
 }
