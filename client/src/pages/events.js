@@ -33,7 +33,7 @@ class Events extends Component {
 
     render() {
         return (
-            <div className="genBackground">
+            <div className="chefsBackground">
                 <Parallax className="eventsContainer" strength={500}>
                     <div style={{ height: 1000 }}>
                         <header className="eventsHeader">
