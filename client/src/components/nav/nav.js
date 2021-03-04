@@ -43,13 +43,11 @@ class Navigation extends React.Component {
         <Nav className="restLinks">
           <NavDropdown title="About" id="collasible-nav-dropdown">
             <NavDropdown.Item className="hello" href="/about">About</NavDropdown.Item>
-            <NavDropdown.Item className="hello" href="/careers">Careers</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item className="hello" href="/contact">Contact</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="/chefs">Chefs</Nav.Link>
           <Nav.Link href="/menu">Menu</Nav.Link>
-
           {/* this edit menu needs to have firebase authentication */}
           <Nav.Link href="/employeemenu">Edit Menu</Nav.Link>
           <Nav.Link href="/events">Private Events</Nav.Link>
