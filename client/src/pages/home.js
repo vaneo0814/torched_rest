@@ -27,7 +27,7 @@ function Home() {
               </p>
             </div>
             <div className="col">
-              <img className="rightCol" src="https://i.postimg.cc/rsqqnD85/IMG-0747.jpg" width="900" alt="food">
+              <img className="rightCol" src="https://i.postimg.cc/rsqqnD85/IMG-0747.jpg" width="700" alt="food">
               </img>
             </div>
           </div>
