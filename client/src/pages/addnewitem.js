@@ -51,7 +51,7 @@ function CreateItemForm() {
                 <textarea className="form-control mb-5" required ref={bodyRef} placeholder="Description" />
                 <input className="form-control mb-5" required ref={priceRef} placeholder="Price" />
                 <button className="menu-btn" disabled={state.loading} type="submit" >
-                    <a href="employeemenu">
+                    <a>
                     Save New Menu Item
                     </a>
                 </button>
