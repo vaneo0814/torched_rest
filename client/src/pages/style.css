@@ -114,8 +114,8 @@ header {
     display: block;
     padding-top: 150px;
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 45px;
+    font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
 }
@@ -126,7 +126,7 @@ header {
 
 .careersInfo{
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 20px;
 }
 
@@ -385,6 +385,9 @@ input, textarea {
     border-style: solid;
     border-color: black!important;
     color: black!important;
+    border: 1px solid #b7bbbd;
+    outline: none!important;
+    
 
 }
 
@@ -577,7 +580,7 @@ input, textarea {
     background-color: rgba(56, 71, 65, 0);
     font-size: 20px;
     font-weight: bold;
-    padding: 10px;
+    padding-bottom: 40px;
     width: 200px;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
