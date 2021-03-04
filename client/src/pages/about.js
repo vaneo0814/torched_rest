@@ -3,14 +3,14 @@ import './style.css';
 
 function About() {
     return (
-        <div className="genBackground">
+        <div className="aboutBackground">
             <div className="row">
                 <div className="col">
-                    <img className="leftAbout" src=" https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Latte-Art-Tulip.jpg" width="500" alt="coffee">
+                    <img className="leftAbout" src="https://c.stocksy.com/a/2oN600/z9/1521482.jpg" width="350" alt="coffee">
                     </img>
                 </div>
                 <div className="col">
-                    <img className="rightAbout" src="https://static.onecms.io/wp-content/uploads/sites/37/2020/03/31/RU317429.jpg" width="700" alt="loaf">
+                    <img className="rightAbout" src="https://www.kitchensanctuary.com/wp-content/uploads/2020/06/Artisan-Bread-tall2-25.jpg" width="350" alt="loaf">
                     </img>
                 </div>
             </div>

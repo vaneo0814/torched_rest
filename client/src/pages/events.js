@@ -33,7 +33,7 @@ class Events extends Component {
 
     render() {
         return (
-            <div className="genBackground">
+            <div className="chefsBackground">
                 <Parallax className="eventsContainer" strength={500}>
                     <div style={{ height: 1000 }}>
                         <header className="eventsHeader">
@@ -58,10 +58,7 @@ class Events extends Component {
                 <Modal open={this.state.eventModalIsOpen} onClose={this.closeModal}>
                     <button className="closeBtnEvents" onClick={this.closeModal}>x</button>
                     <div className="bookEvent-form-container">
-                        <h2 className="modalHeader">
-                            Contact us about your private event
-                        </h2>
-                        <hr/>
+                       
                 <form onSubmit={sendEventInfo}>
                     <input type="text" className="form-control" placeholder="Name" name="name" required/>
                     <br/>
@@ -84,7 +81,7 @@ class Events extends Component {
                     <br/>
                     <textarea className="form-control" placeholder="Additional Information" row="4" name="information"/>
                     <br/>
-                    <input type="submit" className="form-control-submitEventBtn" value="Submit"/>
+                    <input type="submit" className="form-control-submitEventBtn" value="Request Event"/>
                 </form>
             </div>
                 </Modal>
