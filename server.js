@@ -3,7 +3,9 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
-require("dotenv").config();
+
+//might be causing atlas issue?
+//require("dotenv").config();
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -15,7 +17,8 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-// Connect to the Mongo DB
+// Connect to the Mongo DB 
+//heroku test comment
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reserv", //mongodb name
   {
     useNewUrlParser: true,
