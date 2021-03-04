@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reserv");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/torchreserv");
 
 const menuSeed = [
     {
