@@ -6,10 +6,20 @@ import UpdateBtn from "../components/UpdateBtn";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GLOBALSTATE";
 import { LOADING, GET_MENUITEMS, REMOVE_MENUITEM } from "../utils/actions";
+import { useHistory } from "react-router-dom";
 //import {Container} from "mdbreact"
+import { signout } from '../utils/firebase'
 import "./style.css"
 
 function MenuItemList() {
+
+    let isSignedIn = localStorage.getItem("isSignedIn")
+    let history = useHistory();
+
+    if (isSignedIn !== 'true') {
+        history.push('/login')
+    }
+
     const [state, dispatch] = useStoreContext();
 
     const removeMenuItem = id => {
@@ -30,6 +40,11 @@ function MenuItemList() {
             });
         }).catch(err => console.log(err))
     };
+
+    function signOut() {
+        signout()
+        window.location.href = "/login"
+    }
 
     const updateMenuItem = (id) => {
         window.location.replace("/updateitem/" + id)
@@ -69,7 +84,10 @@ return (
         
 {/* this needs to be a link to the update page like in update blog post */}
        {/* <CreateMenuItem/> */}
+
        <Link to={"/additem"} className="btn btn-secondary mt-3 mb-5" role="button" tabIndex="0">Add New Menu Item Here</Link>
+       <button onClick={signOut}>Log Out</button>
+
     </div>
 
 )
