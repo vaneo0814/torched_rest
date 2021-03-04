@@ -1,38 +1,49 @@
+
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties the Posts collection and inserts the books below
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reserv");
-
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/torchreserv", //mongodb name
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  });
+  
 const menuSeed = [
     {
         title: "Coffee",
-        price: "$2.50",
+        price: "2.5",
         body:
             "Available milk options: whole milk, 2%, almond, soy, oat. Chocolate, Caramel, or vanilla + $0.50"
     },
     {
         title: "Latte",
-        price: "$6.00",
+        price: "5",
         body:
             "Available milk options: whole milk, 2%, almond, soy, oat. Chocolate, Caramel, or vanilla + $0.50"
     },
     {
         title: "Cappucino",
-        price: "$6.00",
+        price: "5",
         body:
             "Available milk options: whole milk, 2%, almond, soy, oat. Chocolate, Caramel, or vanilla + $0.50"
     },
     {
         title: "Juice",
-        price: "$3.00",
+        price: "3",
         body: "Guava, Passsion fruit, OJ, Pineapple, Lemonade"
     },
     {
         title: "BLT",
-        price: "$9.00",
+        price: "9",
         body: "Bacon, lettuce and tomato, served on sourdough with aoli and spicy mustard"
+    },
+    {
+        title: "The Kevin",
+        price: "10",
+        body: "Since Kevin just sounds like a healthy guy kinda name (maybe someone who would ride a static bike under his desk while he works, but he's not trying to run an ironman at 4am you know what we mean?), we made a sandwhich that embodies that. We combine grilled chicken with avocado, arugula, sun dried tomato,artichokes, and garlic aoli and balsamic reduction, all pananini grilled on whole grain bread."
     }
 ];
 
