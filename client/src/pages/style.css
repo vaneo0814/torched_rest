@@ -262,7 +262,7 @@ header {
 
 .eventsHeader {
     margin-top: 50px;
-    font-size: 60px;
+    font-size: 40px;
     color: black;
     font-family: 'Montserrat', sans-serif;
     text-shadow:
@@ -274,7 +274,7 @@ header {
 
 .newWaytoDine {
     font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     font-weight:bolder;
     text-transform: uppercase;
 }
@@ -284,7 +284,7 @@ header {
     text-align: left;
     font-size: 20px;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .eventsContent {
@@ -387,8 +387,7 @@ input, textarea {
     color: black!important;
     border: 1px solid #b7bbbd;
     outline: none!important;
-    
-
+    resize: none!important;    
 }
 
 /* safety page */

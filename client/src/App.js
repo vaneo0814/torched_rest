@@ -3,7 +3,6 @@ import Navigation from './components/nav/nav.js';
 import Footer from './components/footer/footer.js';
 import Home from "./pages/home.js";
 import About from "./pages/about.js";
-import Careers from "./pages/careers.js";
 import Contact from "./pages/contactus.js";
 import Chefs from "./pages/chefs.js";
 import EmployeeMenu from "./pages/employeeMenu";
@@ -29,8 +28,6 @@ function App() {
               component={Home} />
             <Route path="/about"
               component={About} />
-            <Route path="/careers"
-              component={Careers} />
             <Route path="/contact"
               component={Contact} />
             <Route path="/chefs"
