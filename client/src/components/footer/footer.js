@@ -47,7 +47,7 @@ function Footer() {
                   <Link to="/events">Private Events</Link>
                 </li>
                 <li className="list-unstyled">
-                  <Link to="/login">Owner/Team Members</Link>
+                  <Link to="/employeemenu">Owner/Team Members</Link>
                 </li>
               </ul>
             </MDBCol>
