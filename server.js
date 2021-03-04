@@ -19,7 +19,7 @@ app.use(routes);
 
 // Connect to the Mongo DB 
 //heroku test comment
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reserv", //mongodb name
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/torchreserv", //mongodb name
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
