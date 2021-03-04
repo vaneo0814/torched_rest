@@ -553,6 +553,23 @@ input, textarea {
     padding-bottom: 35px;
 }
 
+.menu-btn {
+    margin-top: 10px;
+    background-color: rgba(218, 169, 113, 0);
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: black;
+}
+
+.menu-btn:hover{
+    background-color:rgb(119, 117, 117);
+}
+
 /* update page */
 
 

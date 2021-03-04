@@ -77,13 +77,13 @@ function UpdateItemForm(props) {
                 <input id="name" className="form-control mb-5" required ref={titleRef} placeholder="Name"></input>
                 <textarea id="description" className="form-control mb-5" required ref={bodyRef} placeholder="Description" />
                 <input id="price" className="form-control mb-5" required ref={priceRef} placeholder="Price" />
-                <button className="btn btn-secondary mt-3 mb-5 mr-2" disabled={state.loading} type="submit" >
+                <button className="menu-btn" disabled={state.loading} type="submit" >
                     Save Updated Item
                 </button>
 
 
             </form>
-            <button className="btn btn-secondary mt-3 mb-5 ml-2" type="submit" >
+            <button className="menu-btn" type="submit" >
                 <a href="/employeemenu">
                     Go Back
                     </a>
