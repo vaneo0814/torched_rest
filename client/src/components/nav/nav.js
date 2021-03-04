@@ -49,7 +49,7 @@ class Navigation extends React.Component {
           <Nav.Link href="/chefs">Chefs</Nav.Link>
           <Nav.Link href="/menu">Menu</Nav.Link>
           {/* this edit menu needs to have firebase authentication */}
-          <Nav.Link href="/employeemenu">Edit Menu</Nav.Link>
+          {/* <Nav.Link href="/employeemenu">Edit Menu</Nav.Link> */}
           <Nav.Link href="/events">Private Events</Nav.Link>
           <Nav.Link href="/safety">Safety</Nav.Link>
           <Nav.Link href="/location">Location</Nav.Link>

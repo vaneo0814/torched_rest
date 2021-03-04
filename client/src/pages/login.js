@@ -31,7 +31,7 @@ function Login() {
       };
 
     return (
-        <div className="genBackground">
+        <div className="chefsBackground">
             <div className="loginContainer">
                 <h1 className="login">
                     Login

@@ -436,7 +436,8 @@ input, textarea {
 
 /* login page */
 .loginContainer {
-    padding-top: 200px;
+    padding-top: 300px;
+    padding-bottom: 200px;
 }
 
 .login{
@@ -536,7 +537,7 @@ input, textarea {
 
 /* menu page */
 .menu-header {
-    font-family: 'Playfair Display', serif;
+    font-family:monospace;
     font-size: 60px;
     text-transform: uppercase;
     /* position: relative; */
@@ -554,6 +555,9 @@ input, textarea {
 
 .menu-btn {
     margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
     background-color: rgba(218, 169, 113, 0);
     font-size: 20px;
     padding: 10px;

@@ -85,8 +85,9 @@ return (
 {/* this needs to be a link to the update page like in update blog post */}
        {/* <CreateMenuItem/> */}
 
-       <Link to={"/additem"} className="btn btn-secondary mt-3 mb-5" role="button" tabIndex="0">Add New Menu Item Here</Link>
-       <button onClick={signOut}>Log Out</button>
+       <Link to={"/additem"} className="menu-btn" role="button" tabIndex="0">Add New Menu Item Here</Link>
+       <br/>
+       <button className="menu-btn" onClick={signOut}>Log Out</button>
 
     </div>
 
