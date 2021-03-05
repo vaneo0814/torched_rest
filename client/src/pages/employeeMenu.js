@@ -59,7 +59,7 @@ console.log("menu items rendered");
 
 return (
     <div className="menuBackground">
-            <h1 className="menu-header">Menu</h1>
+            <h1 className="menu-header">menu</h1>
         {state.menuItems.length ? (
             <List>
                 {state.menuItems.map(currentMenuItem => (
