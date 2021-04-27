@@ -51,6 +51,7 @@ Click [here](https://torchedrest007.herokuapp.com/) to launch torched!
 ## Contact 
 
 Feel free to email me - vorellana814@gmail.com
+
 [Linkedin](https://www.linkedin.com/in/vanessa-orellana-36769986/)
 
 
