@@ -8,7 +8,6 @@ A restaurant website 'torched' created using React, deployed through Heroku.
 
 ![Screen Shot 2021-04-27 at 7 05 48 PM](https://user-images.githubusercontent.com/67250231/116323309-b8f09780-a78b-11eb-97bb-114815c48acb.png)
 
-
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -16,8 +15,6 @@ A restaurant website 'torched' created using React, deployed through Heroku.
 * [Deployment](#deployment)
 * [Tools Used](#tools)
 * [Contact](#contact)
-
-
 
 ## Installation
 
@@ -54,6 +51,8 @@ Click [here](https://torchedrest007.herokuapp.com/) to launch torched!
 ## Contact 
 
 Feel free to email me - vorellana814@gmail.com
+[Linkedin](https://www.linkedin.com/in/vanessa-orellana-36769986/)
+
 
 
 
