@@ -44,12 +44,12 @@ Click [here](https://torchedrest007.herokuapp.com/) to launch torched!
 
 ## Tools
 
-⋅⋅* Google Maps API
-⋅⋅* React
-⋅⋅* Firebase
-⋅⋅* EmailJS API
-⋅⋅* Express
-⋅⋅* Animate.css
+* Google Maps API
+* React
+* Firebase
+* EmailJS API
+* Express
+* Animate.css
 
 ## Contact 
 
