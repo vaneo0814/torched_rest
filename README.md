@@ -2,13 +2,19 @@
 
 A restaurant website 'torched' created using React, deployed through Heroku.
 
+![Screen Shot 2021-04-27 at 7 05 10 PM](https://user-images.githubusercontent.com/67250231/116323297-b2fab680-a78b-11eb-802e-ea969da53db0.png)
+
+![Screen Shot 2021-04-27 at 7 05 30 PM](https://user-images.githubusercontent.com/67250231/116323306-b5f5a700-a78b-11eb-8e71-55f9075faa5b.png)
+
+![Screen Shot 2021-04-27 at 7 05 48 PM](https://user-images.githubusercontent.com/67250231/116323309-b8f09780-a78b-11eb-97bb-114815c48acb.png)
+
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributions](#contributions)
 * [Deployment](#deployment)
-* [Tools Used](#tools used)
+* [Tools Used](#tools)
 * [Contact](#contact)
 
 
@@ -36,7 +42,7 @@ Lohelani and Julian were the backend team. Vanessa was in charge of the frontend
 
 Click [here](https://torchedrest007.herokuapp.com/) to launch torched!
 
-## Tools Used
+## Tools
 
 ⋅⋅* Google Maps API
 ⋅⋅* React
